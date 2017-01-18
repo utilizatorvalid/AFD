@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/move_option"
+        android:title="Move to ..."
+        android:visible="false" />
+    <item
+        android:id="@+id/copy_option"
+        android:title="Copy to ..."
+        android:visible="false" />
+    <item
+        android:id="@+id/rename_option"
+        android:title="Rename"
+        android:visible="false" />
+
+</menu>

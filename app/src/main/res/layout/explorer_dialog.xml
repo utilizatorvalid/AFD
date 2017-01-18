@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shortcut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shortcut" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/shortcut"
+            android:layout_toRightOf="@+id/shortcut"
+            android:background="#9e9e9e" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/explorer_previous_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_state_drawable"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/im_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:src="@drawable/folder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/im_item_icon"
+            android:layout_alignTop="@+id/im_item_icon"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/im_item_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="Previous Folder"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/previous_folder_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="/sdcard"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/explorer_current_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_state_drawable"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/im_item_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:src="@drawable/folder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/im_item_icon2"
+            android:layout_alignTop="@+id/im_item_icon2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/im_item_icon2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_item_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="Current Folder"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/current_folder_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="/sdcard"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/local_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local Storage" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/local_storage"
+            android:layout_toRightOf="@+id/local_storage"
+            android:background="#9e9e9e" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
